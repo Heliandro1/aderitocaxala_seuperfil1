@@ -2,6 +2,7 @@ import { View, Text, SafeAreaView } from "react-native";
 import React from "react";
 import ProfileHeader from "../../components/profile-header";
 import Alert from "../../components/alert";
+import ProfileCard from "../../components/profile-card";
 
 export default function Profile() {
   return (
@@ -11,6 +12,7 @@ export default function Profile() {
         title="Completar perfil"
         information="Preencha suas informações para encontrar pacientes"
       />
+      <ProfileCard />
     </SafeAreaView>
   );
 }
