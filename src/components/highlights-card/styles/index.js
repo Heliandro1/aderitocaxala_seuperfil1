@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     marginTop: 0,
   },
   informationContainer: {
+    zIndex: 1,
     height: "100%",
     width: "100%",
     display: "flex",
@@ -23,13 +24,14 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   titleContainer(sub) {
+    /** Função utilizada para selecionar a cor do fundo consoante o titulo que vair ser passado */
     const container = {
       height: 25,
       borderRadius: 7,
       padding: 3,
     };
-    if(sub === 'parceiros') container.backgroundColor = '#D48A04'
-    else container.backgroundColor = '#3B2D72'
+    if (sub === "parceiros") container.backgroundColor = "#D48A04";
+    else container.backgroundColor = "#3B2D72";
     return container;
   },
   title: {
@@ -42,17 +44,16 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: "#FFFF",
   },
-  //   gradient: {
-  //     position: "absolute",
-  //     top: 0,
-  //     left: 0,
-  //     right: 0,
-  //     bottom: 0,
-  //     height: "100%",
-  //     borderRadius: 14,
-  //     zIndex: 1,
-  //     backgroundColor: "transparent",
-  //   },
+  gradient: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    height: "100%",
+    borderRadius: 14,
+    backgroundColor: "transparent",
+  },
 });
 
 export default styles;

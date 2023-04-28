@@ -22,7 +22,7 @@ export default function HighLightsCard({ title, subTitle, backImageUrl }) {
       </View>
       <LinearGradient
         style={styles.gradient}
-        colors={["transparent", "rgba(0, 0, 0, 0.2)", "rgba(0, 0, 0, 0.95)"]}
+        colors={["transparent", "rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0.9)"]}
       />
     </TouchableOpacity>
   );
