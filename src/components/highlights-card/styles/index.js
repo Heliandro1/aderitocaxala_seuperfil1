@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   titleContainer(sub) {
-    /** Função utilizada para selecionar a cor do fundo consoante o titulo que vair ser passado */
+    /** This function is used to switch the color of the title based on its value */
     const container = {
       height: 25,
       borderRadius: 7,

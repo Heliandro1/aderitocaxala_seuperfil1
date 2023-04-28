@@ -18,14 +18,14 @@ const data = [
   {
     title: "Parceiros",
     subTitle: "Diabetes: Alimentos para evitar",
-    backImage: "",
+    backImage: require("../../images.jpeg"),
   },
   {
     title: "Capacitações",
     subTitle: "Como ministrar doses",
-    backImage: "",
+    backImage: require("../../images1.jpeg"),
   },
-]; //um objecto para simular que os dados estão sendo pegos de uma API
+]; //An object to act as if the data is coming from some API
 export default function Profile() {
   return (
     <SafeAreaView>
@@ -57,7 +57,7 @@ export default function Profile() {
             <HighLightsCard
               title={item.title}
               subTitle={item.subTitle}
-              backImageUrl={require("../../images.jpeg")}
+              backImageUrl={item.backImage}
             />
           )}
           keyExtractor={(i, index) => index}
